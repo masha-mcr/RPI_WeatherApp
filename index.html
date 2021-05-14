@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body onload="init()">
+    <div id="main">
+        <header class="header">
+            <div class="header__buttons">
+                <button onclick="changeBackground()" class="header__button bg-btn">
+                    <img src="img/RefreshBG.svg" alt="change background">
+                </button>
+                <button class="header__button tmpr-btn">°C</button>
+            </div>
+            
+            <form id="header__searchbar" class="header__searchbar">
+                
+                    <input id="header__input" type="text" placeholder="Найдите город"/>
+                
+                <button class="header__button search-btn" id="header__button">Поиск</button>
+            </form>
+        </header>
+    
+        <div class="weather">
+            <div id="location"></div>
+            <div id="datetime"></div>
+            <div class="weather__content">
+                <div class="today">
+                    <div id="today__temperature"></div>
+                    <div class="today__info">
+                        <img id="today__image" src="" alt="weather today">
+                        <div class="info__item" id="weather__desc"></div>
+                        <div class="info__item" id="weather__feels"></div>
+                        <div class="info__item" id="weather__wind"></div>
+                        <div class="info__item" id="weather__humidity"></div>
+                    </div>
+                </div>
+                <div class="next-day__container">
+                    <div class="next-day">
+                        <div id="next-day__title1" class="next-day__title"></div>
+                        <div class="next-day__info">
+                            <div id="next-day__temperature1" class="next-day__temperature"></div>
+                            <img id="next-day__image1" class="next-day__image" src="">
+                        </div>
+                    </div>
+                    <div class="next-day">
+                        <div id="next-day__title2" class="next-day__title"></div>
+                        <div class="next-day__info">
+                            <div id="next-day__temperature2" class="next-day__temperature"></div>
+                            <img id="next-day__image2" class="next-day__image" src="">
+                        </div>
+                    </div>
+                    <div class="next-day">
+                        <div id="next-day__title3" class="next-day__title"></div>
+                        <div class="next-day__info">
+                            <div id="next-day__temperature3" class="next-day__temperature"></div>
+                            <img id="next-day__image3" class="next-day__image" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/changeBG.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/init.js"></script>
+    <script src="scripts/const.js"></script>
+</body>
+</html>

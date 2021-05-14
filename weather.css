@@ -1,0 +1,112 @@
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 6vh;
+    margin-left: 90px;
+}
+
+.weather__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: -5vh;
+
+}
+
+#location {
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#datetime {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #FFFFFF;
+    align-items:flex-start;
+    display: flex;
+    width: 300px;
+}
+
+.today {
+    display: flex;
+}
+
+#today__temperature {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 280px;
+    line-height: 419px;
+    display: block;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#today__image {
+    height: 230px;
+}
+
+.info__item {
+    margin-top: 10px;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.next-day__title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px 6px
+}
+
+.next-day__image {
+    height: 100px;
+    margin-top: -4vh;
+}
+
+.next-day__temperature {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 98px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.next-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -75px;
+}
+
+.next-day__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 21vh;
+}
