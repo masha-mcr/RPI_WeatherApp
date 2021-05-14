@@ -1,5 +1,5 @@
 async function changeBackground() {
-    const key = "UdXz_LTX_OmS6yiNHfNucQJZ6QlIwG1dIN1Un0w6DaM"
+    const key = {secret_key}
     const url = `https://api.unsplash.com/photos/random?orientation=landscape&per_page=1&query=landscape&client_id=${key}`
     let response
     try {

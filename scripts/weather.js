@@ -14,7 +14,7 @@ async function changeWeatherData() {
         
     }
     console.log(city)
-    const key = "132a369a2d31b40d11029b9f913b16a6"
+    const key = {secret_key}
     const currentWeatherURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=ru`
     const forecastURL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&lang=ru`
     let currentWeather
